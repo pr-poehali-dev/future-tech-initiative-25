@@ -8,42 +8,42 @@ interface ContactProps {
 const translations = {
   en: {
     heading: "Contact",
-    subheading: "Get in Touch",
+    subheading: "Leave a request — I will get back to you as soon as possible",
     email: "Email",
     phone: "Phone",
-    message: "Message",
-    send: "Send Message",
+    message: "Tell me about your order",
+    send: "Send Request",
     location: "Location",
-    name: "Name",
-    successMessage: "Message sent successfully!",
-    locationValue: "Berlin, Germany",
-    phoneValue: "+49 (30) 123-4567",
+    name: "Your Name",
+    successMessage: "Request sent! Evgenia will contact you shortly.",
+    locationValue: "Russia",
+    phoneValue: "+7 (___) ___-__-__",
   },
   de: {
     heading: "Kontakt",
-    subheading: "Treten Sie mit uns in Kontakt",
+    subheading: "Hinterlassen Sie eine Anfrage — ich melde mich so schnell wie möglich",
     email: "E-Mail",
     phone: "Telefon",
-    message: "Nachricht",
-    send: "Nachricht senden",
+    message: "Erzählen Sie mir von Ihrer Bestellung",
+    send: "Anfrage senden",
     location: "Standort",
-    name: "Name",
-    successMessage: "Nachricht erfolgreich gesendet!",
-    locationValue: "Berlin, Deutschland",
-    phoneValue: "+49 (30) 123-4567",
+    name: "Ihr Name",
+    successMessage: "Anfrage gesendet! Evgenia meldet sich in Kürze bei Ihnen.",
+    locationValue: "Russland",
+    phoneValue: "+7 (___) ___-__-__",
   },
   ru: {
     heading: "Контакты",
-    subheading: "Свяжитесь с нами",
+    subheading: "Оставьте заявку — и я свяжусь с вами в ближайшее время",
     email: "Эл. почта",
     phone: "Телефон",
-    message: "Сообщение",
-    send: "Отправить",
+    message: "Расскажите о вашем заказе",
+    send: "Отправить заявку",
     location: "Город",
-    name: "Имя",
-    successMessage: "Сообщение успешно отправлено!",
-    locationValue: "Берлин, Германия",
-    phoneValue: "+49 (30) 123-4567",
+    name: "Ваше имя",
+    successMessage: "Заявка отправлена! Евгения свяжется с вами в ближайшее время.",
+    locationValue: "Россия",
+    phoneValue: "+7 (___) ___-__-__",
   },
 }
 
@@ -55,7 +55,7 @@ export default function Contact({ language }: ContactProps) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
-    const mailtoLink = `mailto:hello@example.com?subject=${encodeURIComponent(`New message from ${formData.name}`)}&body=${encodeURIComponent(`From: ${formData.email}\n\n${formData.message}`)}`
+    const mailtoLink = `mailto:murashkina@example.com?subject=${encodeURIComponent(`Заказ от ${formData.name}`)}&body=${encodeURIComponent(`От: ${formData.email}\n\n${formData.message}`)}`
     window.location.href = mailtoLink
 
     setSubmitted(true)
@@ -77,7 +77,7 @@ export default function Contact({ language }: ContactProps) {
           <div className="space-y-8 animate-fade-in-up">
             <div>
               <small className="font-medium text-charcoal/70 mb-2 block">{t.email}</small>
-              <p className="text-charcoal">hello@example.com</p>
+              <p className="text-charcoal">murashkina@example.com</p>
             </div>
             <div>
               <small className="font-medium text-charcoal/70 mb-2 block">{t.phone}</small>

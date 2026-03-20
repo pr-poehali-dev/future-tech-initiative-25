@@ -6,10 +6,10 @@ const translations = {
   en: {
     copyright: "All rights reserved.",
     followMe: "Follow",
-    subtitle: "Classical Pianist",
+    subtitle: "Master Bone & Wood Carver",
     quickLinks: "Quick Links",
-    biography: "Biography",
-    concerts: "Concerts",
+    biography: "About",
+    concerts: "Services",
     gallery: "Gallery",
     privacyPolicy: "Privacy Policy",
     terms: "Terms",
@@ -17,10 +17,10 @@ const translations = {
   de: {
     copyright: "Alle Rechte vorbehalten.",
     followMe: "Folgen Sie mir",
-    subtitle: "Klassischer Pianist",
+    subtitle: "Meisterin der Knochen- und Holzschnitzerei",
     quickLinks: "Schnelllinks",
-    biography: "Biographie",
-    concerts: "Konzerte",
+    biography: "Über mich",
+    concerts: "Leistungen",
     gallery: "Galerie",
     privacyPolicy: "Datenschutz",
     terms: "AGB",
@@ -28,10 +28,10 @@ const translations = {
   ru: {
     copyright: "Все права защищены.",
     followMe: "Соцсети",
-    subtitle: "Классический пианист",
+    subtitle: "Мастер резьбы по кости и дереву",
     quickLinks: "Навигация",
-    biography: "Биография",
-    concerts: "Концерты",
+    biography: "О мастере",
+    concerts: "Услуги",
     gallery: "Галерея",
     privacyPolicy: "Политика конфиденциальности",
     terms: "Условия",
@@ -46,7 +46,7 @@ export default function Footer({ language }: FooterProps) {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-warm-white mb-4">А. Фосс</h3>
+            <h3 className="text-warm-white mb-4">Е. Мурашкина</h3>
             <small className="text-warm-white/70">{t.subtitle}</small>
           </div>
 
@@ -63,6 +63,7 @@ export default function Footer({ language }: FooterProps) {
                   {t.concerts}
                 </a>
               </li>
+
               <li>
                 <a href="#gallery" className="hover:text-gold transition-colors">
                   {t.gallery}
@@ -85,7 +86,7 @@ export default function Footer({ language }: FooterProps) {
         </div>
 
         <div className="border-t border-warm-white/20 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-warm-white/70">
-          <small>&copy; 2025 Александр Фосс. {t.copyright}</small>
+          <small>&copy; 2026 Евгения Мурашкина. {t.copyright}</small>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-warm-white transition-colors">
               {t.privacyPolicy}
